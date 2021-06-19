@@ -25,7 +25,7 @@ export const useStyles = makeStyles((theme: Theme) =>
 		},
 		btn: {
 			margin: "30px",
-			width: "45%",
+			width: "40%",
 			fontWeight: "bold",
 			[theme.breakpoints.down("sm")]: {
 				width: "50%",
