@@ -8,6 +8,7 @@ import {
 	List,
 	ListItem,
 	ListItemText,
+	Typography,
 	Checkbox,
 	IconButton,
 } from "@material-ui/core";
@@ -19,17 +20,22 @@ export const useStyles = makeStyles((theme: Theme) =>
 		list: {
 			display: "flex",
 			flexDirection: "column",
-			width: "70%",
+			width: "80%",
 			justifyContent: "space-between",
 			textAlign: "center",
 			margin: "0 auto",
 			paddin: "10px",
+			[theme.breakpoints.down("sm")]: {
+				width: "100%",
+			},
+			[theme.breakpoints.up("md")]: {
+				width: "80%",
+			},
 		},
 		items: {
 			background: "#f5f3f4",
 			padding: "10px",
 			borderBottom: "1px solid gray",
-			cursor: "pointer",
 		},
 	})
 );
@@ -86,14 +92,14 @@ const ListItems = () => {
 	return (
 		<div>
 			{status === "loading" ? (
-				<p>Items loading</p>
+				<Typography variant="body2">Items loading please wait...</Typography>
 			) : itemsList === undefined ? (
-				<p>Add something to the list...</p>
+				<Typography variant="body2">Add something to the list...</Typography>
 			) : itemsList.length === 0 ? (
-				<h3>Shopping list is empty</h3>
+				<Typography variant="body2">Shopping list is empty</Typography>
 			) : (
 				<div className={classes.list}>
-					<h3>Items in the list:</h3>
+					<Typography variant="body2">Items in the list:</Typography>
 					<List dense={dense}>
 						{itemsList.map(
 							(item: { id: string; text: string; checked: boolean }) => (

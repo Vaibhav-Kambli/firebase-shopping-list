@@ -11,6 +11,9 @@ export const useStyles = makeStyles((theme: Theme) =>
 		inputRoot: {
 			color: "red",
 		},
+		input: {
+			fontSize: "18px",
+		},
 
 		formData: {
 			display: "flex",
@@ -22,6 +25,12 @@ export const useStyles = makeStyles((theme: Theme) =>
 		},
 		btn: {
 			margin: "30px",
+			width: "45%",
+			fontWeight: "bold",
+			[theme.breakpoints.down("sm")]: {
+				width: "50%",
+				fontWeight: "bold",
+			},
 		},
 	})
 );
@@ -47,6 +56,7 @@ export const AddItems = ({ addItem }: Props) => {
 				<InputLabel htmlFor="input-old-password">Add Item</InputLabel>
 				<Input
 					type="text"
+					className={classes.input}
 					value={input}
 					placeholder="Eg Milk"
 					onChange={(e) => setInput(e.target.value)}

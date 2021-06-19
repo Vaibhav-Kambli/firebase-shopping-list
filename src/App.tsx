@@ -12,22 +12,25 @@ export const useStyles = makeStyles((theme: Theme) =>
 		root: {
 			display: "flex",
 			flexDirection: "column",
-			width: "60%",
-			height: "95vh",
+			width: "75%",
+			height: "100vh",
 			margin: "0 auto",
-
 			textAlign: "center",
-			overflow: "hidden",
-			scrollY: "none",
+			overflowX: "hidden",
+			scrollX: "none",
 			justifyContent: "flex-start",
+			[theme.breakpoints.down("sm")]: {
+				width: "85%",
+			},
+			[theme.breakpoints.up("md")]: {
+				width: "80%",
+			},
 		},
 
 		btn: {
 			margin: "30px",
 		},
-		grow: {
-			flexGrow: 1,
-		},
+
 		nav: {
 			display: "flex",
 			flexDirection: "column",

@@ -12,14 +12,13 @@ export const theme = createMuiTheme({
 			lineHeight: "1.6",
 		},
 		body2: {
-			color: "#a3a3a3",
 			fontWeight: "bold",
-			fontSize: "14px",
+			marginBottom: "10px",
+			fontSize: "25px",
 			lineHeight: "1.6",
 		},
 	},
 	palette: {
-		// primary: { main: "#DF1B1B" },
 		primary: { main: "#161a1d" },
 		secondary: { main: "#FF510C" },
 	},
