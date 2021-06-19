@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Grocery Shopping List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Tech stack used:**
+
+    • React & TypeScript
+    • Material UI with Typescript
+    • Firebase backend with firestore
+    • ReactFire
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and hosted on Firebase.
+
+Live [Demo](https://shopping-list-firebase-app.web.app/)
+
+## Screenshots
+
+![chrome-capture (1)](https://user-images.githubusercontent.com/51274039/122651069-72247b80-d104-11eb-8e98-778afb0d9068.jpg)
+
+**Demo:**
+
+![shopping-list](https://user-images.githubusercontent.com/51274039/122651080-8799a580-d104-11eb-8374-8da892a90b06.gif)
 
 ## Available Scripts
 
